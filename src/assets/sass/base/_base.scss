@@ -1,0 +1,59 @@
+// basic reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+*,
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after,
+p::after,
+ul::after,
+*::after,
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before,
+p::before,
+ul::before,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+*:active,
+*:focus {
+    outline: none !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+html {
+    // 1rem = 16px
+    font-size: 100%;
+    @include respond(big-desk) {
+        // width > 1800px?
+        font-size: 118.8%; // 1rem = 16 x 1.2 = 19px
+    }
+    @include respond(tab-land) {
+        // width < 1200px?
+        font-size: 93.8%; // 1rem = 16 x 0.938 = 15px
+    }
+    @include respond(tab-port) {
+        // width < 900px?
+        font-size: 81.3%; // 1rem = 16 x 0.813 = 13px
+    }
+    @include respond(phone) {
+        // width < 600px?
+        font-size: 68.8%; // 1rem = 16 x 0.688 = 11px
+    }
+}
