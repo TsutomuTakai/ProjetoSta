@@ -1,20 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+
+//Routes
 import { HomeRoutingModule } from './main-routing.module';
-import { ListGroupsComponent } from './list-groups/list-groups.component';
-import { ListUsersComponent } from './list-users/list-users.component';
-import { NotificationsComponent } from './notifications/notifications.component';
+
+//Modules
+import { GroupsModule } from '@app/modules/groups/groups.module'
+import { UsersModule } from '@app/modules/users/users.module'
+import { UserModule } from '@app/modules/user/user.module'
+
+//Components
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
 
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    UsersModule,
+    GroupsModule,
+    UserModule
   ],
-  declarations: [HomeComponent,
-                ListGroupsComponent,
-                ListUsersComponent,
-                NotificationsComponent]
+  declarations: [HomeComponent]
 })
 export class MainModule { }

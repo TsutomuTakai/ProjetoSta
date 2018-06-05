@@ -17,12 +17,7 @@ const routes: Routes = [
         path:'main',
         loadChildren: '@app/modules/main#MainModule',
         pathMatch: 'full'
-    },
-    {
-      path: '**',
-      redirectTo: '',
-      pathMatch: 'full'
-    },
+    }
 
 ];
 
