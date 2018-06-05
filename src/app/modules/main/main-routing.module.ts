@@ -10,12 +10,12 @@ const routes: Routes = [
     component: HomeComponent,
     data: {
       title: 'Home'
-    }
-  },
+    },
+    children: [
   {
     path: 'listGroups',
     loadChildren: '@app/modules/groups#GroupsModule'
-  },/*
+  },
   {
     path: 'listUsers',
     loadChildren: '@app/modules/users#UsersModule'
@@ -23,10 +23,13 @@ const routes: Routes = [
   {
     path: 'user',
     loadChildren: '@app/modules/user#UserModule'
-  },*/
-  { path: '**',
-    redirectTo: '' }
-
+  },
+  {
+    path: '**',
+    redirectTo: ''
+  }
+]
+}
 ];
 
 @NgModule({

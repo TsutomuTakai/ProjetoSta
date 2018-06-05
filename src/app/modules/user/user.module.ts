@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+//Routes
 import { UserRoutingModule } from './user-routing.module';
+
+//Components
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { AltPasswordComponent } from './alt-password/alt-password.component';
 
@@ -10,6 +13,7 @@ import { AltPasswordComponent } from './alt-password/alt-password.component';
     CommonModule,
     UserRoutingModule
   ],
-  declarations: [EditUserComponent, AltPasswordComponent]
+  declarations: [EditUserComponent,
+                AltPasswordComponent]
 })
 export class UserModule { }

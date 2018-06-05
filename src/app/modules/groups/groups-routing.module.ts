@@ -12,13 +12,17 @@ const routes: Routes = [
     component: ShowGroupsComponent
   },
   {
-    path: 'addUser',
+    path: 'addGroup',
     component: AddGroupComponent
   },
   {
     path: 'editGroup',
     component: EditGroupComponent
   },
+  {
+    path: '**',
+    redirectTo: ''
+  }
 ];
 
 @NgModule({
