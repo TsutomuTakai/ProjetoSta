@@ -5,9 +5,9 @@ import { CommonModule } from '@angular/common';
 import { UsersRoutingModule } from './users-routing.module';
 
 //Components
-import { EditUsersComponent } from './edit-users/edit-users.component';
-import { AddUsersComponent } from './add-users/add-users.component';
-import { ShowUsersComponent } from './show-users/show-users.component';
+import { EditUsersComponent } from './components/edit-users/edit-users.component';
+import { AddUsersComponent } from './components/add-users/add-users.component';
+import { ShowUsersComponent } from './components/show-users/show-users.component';
 
 @NgModule({
   imports: [

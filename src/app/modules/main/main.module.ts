@@ -11,7 +11,7 @@ import { UsersModule } from '@app/modules/users/users.module'
 import { UserModule } from '@app/modules/user/user.module'
 
 //Components
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
 

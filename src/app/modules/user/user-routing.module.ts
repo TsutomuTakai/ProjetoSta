@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //Components
-import { EditUserComponent } from '@app/modules/user/edit-user/edit-user.component';
-import { AltPasswordComponent } from '@app/modules/user/alt-password/alt-password.component';
+import { EditUserComponent } from '@app/modules/user/components/edit-user/edit-user.component';
+import { AltPasswordComponent } from '@app/modules/user/components/alt-password/alt-password.component';
 
 const routes: Routes = [
   {

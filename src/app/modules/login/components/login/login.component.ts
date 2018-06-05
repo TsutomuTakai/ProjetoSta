@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('dasdasdsadas asd asd sa d')
+
   }
 
 }
