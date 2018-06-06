@@ -12,6 +12,7 @@ import { UserModule } from '@app/modules/user/user.module'
 
 //Components
 import { HomeComponent } from './components/home/home.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
 
 @NgModule({
 
@@ -22,6 +23,6 @@ import { HomeComponent } from './components/home/home.component';
     GroupsModule,
     UserModule
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent, NotificationsComponent]
 })
 export class MainModule { }

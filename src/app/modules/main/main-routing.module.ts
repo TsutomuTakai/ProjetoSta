@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 //Components
 import { HomeComponent } from './components/home/home.component';
+import { NotificationsComponent } from '@app/modules/main/components/notifications/notifications.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'listGroups',
     loadChildren: '@app/modules/groups#GroupsModule'
+  },
+  {
+    path: '',
+    component: NotificationsComponent
   },
   {
     path: 'listUsers',
