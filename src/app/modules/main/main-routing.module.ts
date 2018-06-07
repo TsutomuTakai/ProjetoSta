@@ -13,28 +13,28 @@ const routes: Routes = [
       title: 'Home'
     },
     children: [
-  {
-    path: 'listGroups',
-    loadChildren: '@app/modules/groups#GroupsModule'
-  },
-  {
-    path: '',
-    component: NotificationsComponent
-  },
-  {
-    path: 'listUsers',
-    loadChildren: '@app/modules/users#UsersModule'
-  },
-  {
-    path: 'user',
-    loadChildren: '@app/modules/user#UserModule'
-  },
-  {
-    path: '**',
-    redirectTo: ''
+      {
+        path: 'listGroups',
+        loadChildren: '@app/modules/groups#GroupsModule'
+      },
+      {
+        path: '',
+        component: NotificationsComponent
+      },
+      {
+        path: 'listUsers',
+        loadChildren: '@app/modules/users#UsersModule'
+      },
+      {
+        path: 'user',
+        loadChildren: '@app/modules/user#UserModule'
+      },
+      {
+        path: '**',
+        redirectTo: ''
+      }
+    ]
   }
-]
-}
 ];
 
 @NgModule({
