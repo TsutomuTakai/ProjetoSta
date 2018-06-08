@@ -1,3 +1,108 @@
-<p>
-  edit-group works!
-</p>
+<div class="whitespace"></div>
+
+<div class="container-fluid back">
+    <div class="row mx-5">
+        <div class="col-md-3 col-12 justify-content-center">
+            <div class="card border-shadow text-center card-profile align-items-center mb-2">
+                <img class="mt-3" src="./../../../../assets/img/group.png" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="mb-2">
+                        <i class="fas fa-edit mr-2"></i>alterar imagem</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <button type="submit" class="btn btn-save text-uppercase" routerLink="/listGroups/addGroup">
+                    <i class="mr-1 fas fa-check"></i>Salvar grupo</button>
+            </div>
+            <div class="row justify-content-center my-3 ">
+                <button type="submit" class="btn btn-delete text-uppercase" routerLink="/listGroups/addGroup">
+                    <i class="mr-1 fas fa-trash"></i>Excluir grupo</button>
+            </div>
+        </div>
+        <div class="col-xl-9 col-md-9 col-12">
+            <div class="card border-shadow text-center mb-2">
+                <div class=" edit-title m-5 p-3 text-uppercase round-border text-left">grupo rakuten</div>
+                <div class="section-title m-5  ">Coordenador(es)</div>
+                <div class="row justify-content-center mb-3 mx-5">
+                    <input class="input-busca text-center" type="text" placeholder="Buscar usuarios">
+                </div>
+
+                <div class="row back mx-5">
+                    <div *ngFor="let person of manager" class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-5">
+
+                        <div class="card border-shadow text-center card-show align-items-center">
+                            <a class="no-decoration">
+                                <div class="mt-2 mx-2 text-right">
+                                    <i class="mr-1 fas fa-times"></i>
+                                </div>
+                                <img class="card-img-top mt-3" src="{{ person.picture }}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-uppercase">{{ person.name }}</h1>
+                                    <h2 class="mb-2">{{ person.job }}</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-5"></div>
+                    </div>
+                </div>
+                <div class="section-title m-5 ">Colaborador(es)</div>
+                <div class="row justify-content-center mb-3 mx-5">
+                    <input class="input-busca text-center" type="text" placeholder="Buscar usuarios">
+                </div>
+                <div class="row back mx-5">
+                    <div *ngFor="let person of colab" class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-5">
+
+                        <div class="card border-shadow text-center card-show align-items-center">
+                            <a class="no-decoration" routerLink="/listGroups/editGroup">
+                                <div class="mt-2 mx-2 text-right">
+                                    <i class="mr-1 fas fa-times"></i>
+                                </div>
+                                <img class="card-img-top mt-3" src="{{ person.picture }}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-uppercase">{{ person.name }}</h1>
+                                    <h2 class="mb-2">{{ person.job }}</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-5"></div>
+                    </div>
+                </div>
+                <div class="section-title m-5 ">Ítens avaliados</div>
+                <div class="row back mx-5 ">
+                    <div *ngFor="let person of colab" class="col-12 mt-5">
+                        <div class="card border-shadow card-show justify-content-justify">
+                            <div class="mt-2 mx-2 text-right">
+                                <i class="mr-1 fas fa-times"></i>
+                            </div>
+                            <div class="row justify-content-start mx-5">
+                                <div class="col-lg-6 col-12 mt-2 p-1    " >
+                                    <div class="">
+                                        <span class="font-weight-bold">Categoria:</span>
+                                        <span class="round-border m-3 p-1">Comunicação</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mt-2 p-1">
+                                    <div class="">
+                                            <span class="font-weight-bold">Ítem:</span>
+                                        <span class="round-border m-3 p-1">Comunicação</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="font-weight-bold text-left mt-4 mx-5">Descrição:</span>
+                            <p class="round-border m-1 p-3 text-left my-4 mx-5 ">
+                                Expressou de maneira clara,assertiva e não agressiva suas idéias e problemas que tenha identificado
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3 ml-auto">
+                            <button type="submit" class="btn btn-add text-uppercase " routerLink="/listGroups/addGroup">
+                                <i class="mr-1 fas fa-plus"></i>Adicionar Item</button>
+
+                        </div>
+                </div>
+                <div class="mb-5"></div>
+            </div>
+        </div>
+    </div>
+</div>

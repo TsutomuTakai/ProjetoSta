@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-
-//Routes
 import { Routes, RouterModule } from '@angular/router';
 
 //Components
@@ -14,16 +12,12 @@ const routes: Routes = [
     component: ShowUsersComponent
   },
   {
-    path: 'addGroup',
+    path: 'addUser',
     component: AddUsersComponent
   },
   {
-    path: 'editGroup',
+    path: 'editUser',
     component: EditUsersComponent
-  },
-  {
-    path: '**',
-    redirectTo: ''
   }
 ];
 
