@@ -1,4 +1,27 @@
-.page-title{
-  font-weight: bold;
-  color: $color-grayish-brown;
+.page-title {
+    font-weight: bold;
+    color: $color-grayish-brown;
 }
+
+.edit-title {
+    font-size: 1.5rem;
+    color: $color-grayish-brown;
+}
+
+.section-title {
+    font-weight: bold;
+    color: $color-grayish-brown;
+    font-size: 1.5rem;
+}
+
+.back-dark{
+    background-color: #595959;
+  }
+
+.back{
+    background: #f4f7f6;
+  }
+
+  .nav-dark{
+    background-color: #595959;
+  }

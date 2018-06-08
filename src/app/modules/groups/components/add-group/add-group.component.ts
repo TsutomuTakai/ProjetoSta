@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-group.component.scss']
 })
 export class AddGroupComponent implements OnInit {
+    public manager=[]
+    public colab=[]
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

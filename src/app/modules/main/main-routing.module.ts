@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { NotificationsComponent } from '@app/modules/main/components/notifications/notifications.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -28,10 +29,6 @@ const routes: Routes = [
       {
         path: 'user',
         loadChildren: '@app/modules/user#UserModule'
-      },
-      {
-        path: '**',
-        redirectTo: ''
       }
     ]
   }

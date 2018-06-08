@@ -18,4 +18,6 @@ import { ShowGroupsComponent } from './components/show-groups/show-groups.compon
                 EditGroupComponent,
                 ShowGroupsComponent]
 })
-export class GroupsModule { }
+export class GroupsModule {
+
+}

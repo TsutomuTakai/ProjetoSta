@@ -6,6 +6,7 @@ import { ShowGroupsComponent } from '@app/modules/groups/components/show-groups/
 import { AddGroupComponent } from '@app/modules/groups/components/add-group/add-group.component';
 import { EditGroupComponent } from '@app/modules/groups/components/edit-group/edit-group.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -18,10 +19,6 @@ const routes: Routes = [
   {
     path: 'editGroup',
     component: EditGroupComponent
-  },
-  {
-    path: '**',
-    redirectTo: ''
   }
 ];
 

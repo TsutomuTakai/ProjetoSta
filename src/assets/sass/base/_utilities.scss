@@ -21,3 +21,22 @@
 .nowrap {
   white-space: nowrap;
 }
+
+.whitespace{
+    height: 10rem;
+}
+
+.border-shadow
+{
+
+    border-radius: 0.8rem;
+    background-color: #fff;
+    box-shadow: 0 4px 5px 0 rgba(89, 89, 89, 0.31);
+}
+
+.round-border{
+    border-style: solid;
+    border-radius: 50vh;
+    border-color: $color-grayish-brown;
+    border-width: 0.08rem;
+}

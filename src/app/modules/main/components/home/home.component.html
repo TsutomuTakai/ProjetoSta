@@ -1,27 +1,30 @@
-<div class="container bg-light">
+<div class="container-flex bg-light">
 
     <!--NAVBAR!-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <a class="navbar-brand" href="">PROJETO ESTAGIÁRIO</a>
+        <a class="navbar-brand" routerLink="/main">PROJETO ESTAGIÁRIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
         <div class="collapse navbar-collapse" id="navbar-site">
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-home">
-                    <a href="">HOME</a>
+                    <a routerLink="/main">HOME</a>
                 </li>
 
                 <li class="nav-home">
-                    <a href="">GRUPOS</a>
+                    <a routerLink="/listGroups">GRUPOS</a>
                 </li>
 
                 <li class="nav-home">
-                    <a href="">USUÁRIOS</a>
+                    <a routerLink="/listUsers">USUÁRIOS</a>
                 </li>
 
                 <li class="nav-home-perfil">
-                    <a href="">PERFIL</a>
+                    <a routerLink="/user">PERFIL</a>
                 </li>
-            </ul> 
+            </ul>
         </div>
     </nav>
     <router-outlet></router-outlet>
