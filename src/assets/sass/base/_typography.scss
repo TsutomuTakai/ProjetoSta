@@ -5,3 +5,8 @@ body {
     line-height: 1;
     color: $color-black87;
 }
+
+@font-face{
+    font-family: 'Exo';
+    src: url("/src/assets/fonts/Exo/") format('truetype');
+}
