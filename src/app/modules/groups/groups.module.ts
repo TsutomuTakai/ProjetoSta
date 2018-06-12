@@ -8,6 +8,7 @@ import { GroupsRoutingModule } from './groups-routing.module';
 import { AddGroupComponent } from './components/add-group/add-group.component';
 import { EditGroupComponent } from './components/edit-group/edit-group.component';
 import { ShowGroupsComponent } from './components/show-groups/show-groups.component';
+import { FormViewComponent } from './components/form-view/form-view.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { ShowGroupsComponent } from './components/show-groups/show-groups.compon
   ],
   declarations: [AddGroupComponent,
                 EditGroupComponent,
-                ShowGroupsComponent]
+                ShowGroupsComponent,
+                FormViewComponent]
 })
 export class GroupsModule {
 

@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ShowGroupsComponent } from '@app/modules/groups/components/show-groups/show-groups.component';
 import { AddGroupComponent } from '@app/modules/groups/components/add-group/add-group.component';
 import { EditGroupComponent } from '@app/modules/groups/components/edit-group/edit-group.component';
+import {FormViewComponent} from "@app/modules/groups/components/form-view/form-view.component";
 
 
 const routes: Routes = [
@@ -19,7 +20,12 @@ const routes: Routes = [
   {
     path: 'editGroup',
     component: EditGroupComponent
-  }
+  },
+    {
+        path: 'formView',
+        component: FormViewComponent
+    }
+
 ];
 
 @NgModule({
