@@ -32,7 +32,6 @@
     </div>
     <div class="row mx-5">
         <div *ngFor="let person of people" class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-5">
-
             <div class="card border-shadow text-center card-show align-items-center">
                 <a class="no-decoration" routerLink="/listGroups/editGroup">
                     <img class="card-img-top mt-3" src="{{ person.picture }}" alt="Card image cap">
@@ -42,8 +41,6 @@
                     </div>
                 </a>
             </div>
-
-            <a routerLink="/listGroups/formView">go to formView</a>
 
         </div>
     </div>

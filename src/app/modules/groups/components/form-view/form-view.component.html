@@ -11,51 +11,58 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-9 col-md-9 col-12">
+
+        <div class="col-xl-7 col-md-7 col-12">
             <div class="card border-shadow text-center mb-2">
-                <div class="row back mx-5 ">
-                    <div class="col-12 mt-2">
-                        <!--Form Title-->
-                        <div class="card border-shadow text-center mb-2">
-                            <div class=" edit-title m-5 p-3 text-uppercase round-border text-left">Form Title</div>
-                        </div>
-                        <div class="card border-shadow card-show justify-content-justify">
-                            <div class="mt-2 mx-2 text-right">
-                                <i class="mr-1 fas fa-times"></i>
-                            </div>
-                            <div class="row justify-content-start mx-5">
-                                <div class="col-lg-6 col-12 mt-2 p-1    " >
-                                    <div class="">
-                                        <span class="font-weight-bold">Categoria:</span>
-                                        <span class="round-border m-3 p-1">Comunicação</span>
+                <div class=" edit-title m-5 p-3 text-uppercase round-border text-left">Form Title</div>
+
+                    <div class="row back mx-5">
+                        <div class="mb-5 mx-auto">
+                            <div *ngFor="let person of colab" class="col-s-11 col-12 mt-5 mx-auto">
+                                <div class=" row card border-shadow card-show justify-content-justify mx-4">
+
+                                    <div class="mt-2 mx-2 text-right">
+                                        <i class="mr-1 fas fa-times"></i>
+                                    </div>
+
+                                    <div class="row justify-content-start mx-5">
+                                        <div class="col-xl-6 col-md-12 mt-2 p-1 text-left" >
+                                            <div class="row">
+                                                <span class="font-weight-bold formSections my-auto">Categoria:</span>
+                                                <span class="round-border ml-3 p-2 pr-5 font-weight-normal formText">Comunicação</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-md-12 mt-2 p-1 text-right" >
+                                            <div class="row">
+                                                <span class="font-weight-bold formSections my-auto">Item:</span>
+                                                <span class="round-border ml-3 p-2 pr-5 font-weight-normal formText">Comunicação</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify-content-start mx-5">
+                                        <div class="col-12 mt-2 p-1 text-left mt-4">
+                                            <div class="row">
+                                                <span class="font-weight-bold formSections">Descrição:</span>
+                                                <p class="round-border m-1 p-3 text-left my-4 formText">
+                                                    Expressou de maneira clara,assertiva e não agressiva suas idéias e problemas que tenha identificado
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <span class="formSections">Rating:</span>
+                                        <span class="formText"> 4</span>
+                                    </div>
+                                    <div class="col-lg-12 mb-2 formText">
+                                        <p>This is where the rationale can be displayed</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-12 mt-2 p-1">
-                                    <div class="">
-                                        <span class="font-weight-bold">Ítem:</span>
-                                        <span class="round-border m-3 p-1">Comunicação</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <span class="font-weight-bold text-left mt-4 mx-5">Descrição:</span>
-                            <p class="round-border m-1 p-3 text-left my-4 mx-5 ">
-                                Expressou de maneira clara,assertiva e não agressiva suas idéias e problemas que tenha identificado
-                            </p>
-
-                            <div class="col-12 mb-3">
-                                Rating:
-                                <input type="range" name="selfEval" min="1" max="5" class="mx-2">
-                                <button type="submit" class="btn btn-outline-primary">Submit</button>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <textarea cols="70" rows="3" placeholder="How did you perform better than average"></textarea>
                             </div>
                         </div>
                     </div>
-
-                </div>
                 <div class="mb-5"></div>
             </div>
         </div>
     </div>
+</div>
