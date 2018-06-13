@@ -6,9 +6,11 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './main-routing.module';
 
 //Modules
-import { GroupsModule } from '@app/modules/groups/groups.module'
-import { UsersModule } from '@app/modules/users/users.module'
-import { UserModule } from '@app/modules/user/user.module'
+import { GroupsModule } from '@app/modules/groups/groups.module';
+import { UsersModule } from '@app/modules/users/users.module';
+import { UserModule } from '@app/modules/user/user.module';
+import { EvaluationModule } from '@app/modules/evaluation/evaluation.module';
+import { HistoryModule } from '@app/modules/history/history.module';
 
 //Components
 import { HomeComponent } from './components/home/home.component';
@@ -21,7 +23,9 @@ import { NotificationsComponent } from './components/notifications/notifications
     HomeRoutingModule,
     UsersModule,
     GroupsModule,
-    UserModule
+    UserModule,
+    EvaluationModule,
+    HistoryModule
   ],
   declarations: [HomeComponent, NotificationsComponent]
 })

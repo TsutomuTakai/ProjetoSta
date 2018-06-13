@@ -54,3 +54,12 @@
 }
 
 
+.border-sent{
+    border-width: 0.4em;
+    border-color: rgba(33, 139, 56, 0.87);
+}
+
+.border-pendent{
+    border-width: 0.4em;
+    border-color: $color-red;
+}
