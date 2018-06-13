@@ -29,6 +29,14 @@ const routes: Routes = [
       {
         path: 'user',
         loadChildren: '@app/modules/user#UserModule'
+      },
+      {
+        path: 'evaluation',
+        loadChildren: '@app/modules/evaluation#EvaluationModule'
+      },
+      {
+        path: 'history',
+        loadChildren: '@app/modules/history#HistoryModule'
       }
     ]
   }
