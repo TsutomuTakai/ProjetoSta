@@ -34,8 +34,8 @@
             <div class="card border-shadow text-center card-show align-items-center" >
                 <a class="no-decoration" routerLink="/listGroups/editGroup">
                     <div class="mt-2 mx-2 text-right">
-                        <i class="mr-1 fas fa-envelope" [ngClass]="{'icon-ok':person.status==true}"></i>
-                        <i class="mr-1 fas fa-check" [ngClass]="{'icon-ok':person.aval==true}"></i>
+                        <i class="mr-1 fas fa-envelope" [ngClass]="{'icon-ok':person.status==true,'hidden':person.status==false}"></i>
+                        <i class="mr-1 fas fa-check" [ngClass]="{'icon-ok':person.aval==true,'hidden':person.aval==false}"></i>
                     </div>
                     <img class="card-img-top mt-3" [ngClass]="{'border-sent':person.status==true,'border-pendent':person.status==false}" src="{{ person.picture }}" alt="Card image cap" >
                     <div class="card-body">
