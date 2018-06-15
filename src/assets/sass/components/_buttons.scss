@@ -1,6 +1,7 @@
 .btn-delete,
 .btn-add,
-.btn-save {
+.btn-save,
+.btn-send {
     -webkit-min-width: 10rem;
     -moz-min-width: 10rem;
     -ms-min-width: 10rem;
@@ -8,7 +9,6 @@
     min-width: 10rem;
     height: 3rem;
     border-radius: 1.5rem;
-    background-color: $color-red;
     box-shadow: 0 3px 4px 0 rgba(89, 89, 89, 0.56);
     color: #fff;
     font-weight: bold;
@@ -22,13 +22,18 @@
 .btn-add {
     background-color: $color-grayish-brown;
 }
-.btn-save {
+.btn-save,
+.btn-send {
     background-color: rgba(33, 139, 56, 0.87);
 }
 
+.btn-send{
+    width: 50%;
+}
 
 .btn-delete i,
 .btn-save i,
-.btn-add i {
-    font-size: 1.2rem;
+.btn-add i,
+.btn-send i {
+    font-size: 1.5rem;
 }

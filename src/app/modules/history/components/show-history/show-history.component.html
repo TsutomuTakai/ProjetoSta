@@ -1,0 +1,40 @@
+<div class="container-fluid back">
+    <div class="row">
+        <div class="col mt-5">
+            <h2 class="text-uppercase text-center page-title">Avaliações anteriores</h2>
+        </div>
+    </div>
+    <div class="row align-items-center justify-content-center mx-5 mt-5">
+            <div class="col-xl-4 col-lg-4  col-12">
+                    <div class="form-group">
+                        <select class="form-control text-center select-busca" id="sel1">
+                            <option>Avaliação 1</option>
+                            <option>Avaliação 2</option>
+                            <option>Avaliação 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4  col-12">
+            <div class="form-group">
+                <select class="form-control text-center select-busca" id="sel1">
+                    <option>Grupo 1</option>
+                    <option>Grupo 2</option>
+                    <option>Grupo 3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-5">
+        <div *ngFor="let person of people" class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-5">
+
+            <div class="card border-shadow text-center card-show align-items-center" >
+                <a class="no-decoration" routerLink="/listGroups/editGroup">
+                    <img class="card-img-top mt-3" src="{{ person.picture }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="text-uppercase">{{ person.name }}</h1>
+                        <h2 class="mb-2">Coordenador: {{ person.job }}</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>

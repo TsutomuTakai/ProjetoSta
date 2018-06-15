@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShowGroupsComponent } from './show-groups.component';
+import { ShowHistoryFormComponent } from './show-history-form.component';
 
-describe('ShowGroupsComponent', () => {
-  let component: ShowGroupsComponent;
-  let fixture: ComponentFixture<ShowGroupsComponent>;
+describe('ShowHistoryFormComponent', () => {
+  let component: ShowHistoryFormComponent;
+  let fixture: ComponentFixture<ShowHistoryFormComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShowGroupsComponent ]
+      declarations: [ ShowHistoryFormComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShowGroupsComponent);
+    fixture = TestBed.createComponent(ShowHistoryFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

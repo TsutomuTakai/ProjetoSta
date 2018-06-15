@@ -1,27 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-show-users',
-  templateUrl: './show-users.component.html',
-  styleUrls: ['./show-users.component.scss']
+  selector: 'app-list-users',
+  templateUrl: './list-users.component.html',
+  styleUrls: ['./list-users.component.scss']
 })
-export class ShowUsersComponent implements OnInit {
+export class ListUsersComponent implements OnInit {
     public people = [
         {
             name: 'Eduardo Castro',
             job: 'Desenvolvedor Pleno',
-            picture: '../../../../../assets/img/8.jpg'
+            picture: '../../../../../assets/img/8.jpg',
+            status: true
         },
         {
             name: 'Gina Albuquerque',
             job: 'Desenvolvedora Pleno',
-            picture: './../../../../assets/img/3.jpg'
+            picture: './../../../../assets/img/3.jpg',
+            status: true
 
         },
         {
             name: 'Rafael Lider',
             job: 'Desenvolvedor Junior',
-            picture: './../../../../assets/img/53.jpg'
+            picture: './../../../../assets/img/53.jpg',
+            status: false
         },
         {
             name: 'Eduardo Castro',

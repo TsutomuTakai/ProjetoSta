@@ -1,4 +1,5 @@
 // add font properties here
+
 body {
     font-family: 'Exo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 300;
@@ -6,7 +7,20 @@ body {
     color: $color-black87;
 }
 
+//@import url('https://fonts.googleapis.com/css?family=Exo:400,500,700');
+
 @font-face{
     font-family: 'Exo';
-    src: url("/src/assets/fonts/Exo/") format('truetype');
+    src: url('/assets/fonts/Exo/Exo-Regular.ttf'),
+         url('/assets/fonts/Exo/Exo-Bold.ttf');
+}
+
+$font-default:'Exo';
+.formSections{
+    font-size: .75rem;
+}
+
+.formText{
+    font-size: .875rem;
+    font-weight: 400;
 }

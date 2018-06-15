@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //Components
-import { ShowUsersComponent } from '@app/modules/users/components/show-users/show-users.component';
-import { AddUsersComponent  } from '@app/modules/users/components/add-users/add-users.component';
+import { ListUsersComponent } from '@app/modules/users/components/list-users/list-users.component';
+import { CreateUsersComponent  } from '@app/modules/users/components/create-users/create-users.component';
 import { EditUsersComponent } from '@app/modules/users/components/edit-users/edit-users.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ShowUsersComponent
+    component: ListUsersComponent
   },
   {
     path: 'addUser',
-    component: AddUsersComponent
+    component: CreateUsersComponent
   },
   {
     path: 'editUser',
