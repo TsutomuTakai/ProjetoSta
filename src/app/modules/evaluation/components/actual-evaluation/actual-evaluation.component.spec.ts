@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShowAnswerFormComponent } from './show-answer-form.component';
+import { ActualEvaluationComponent } from './actual-evaluation.component';
 
-describe('ShowAnswerFormComponent', () => {
-  let component: ShowAnswerFormComponent;
-  let fixture: ComponentFixture<ShowAnswerFormComponent>;
+describe('ActualEvaluationComponent', () => {
+  let component: ActualEvaluationComponent;
+  let fixture: ComponentFixture<ActualEvaluationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShowAnswerFormComponent ]
+      declarations: [ ActualEvaluationComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShowAnswerFormComponent);
+    fixture = TestBed.createComponent(ActualEvaluationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

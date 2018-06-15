@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-show-actual',
-  templateUrl: './show-actual.component.html',
-  styleUrls: ['./show-actual.component.scss']
+  selector: 'app-actual-evaluation',
+  templateUrl: './actual-evaluation.component.html',
+  styleUrls: ['./actual-evaluation.component.scss']
 })
-export class ShowActualComponent implements OnInit {
+export class ActualEvaluationComponent implements OnInit {
     public people = [
         {
             name: 'Eduardo Castro',

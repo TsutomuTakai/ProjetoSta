@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-show-groups',
-    templateUrl: './show-groups.component.html',
-    styleUrls: ['./show-groups.component.scss']
+    selector: 'app-list-groups',
+    templateUrl: './list-groups.component.html',
+    styleUrls: ['./list-groups.component.scss']
 })
-export class ShowGroupsComponent implements OnInit {
+export class ListGroupsComponent implements OnInit {
     public people = [
         {
             name: 'ERakuten',

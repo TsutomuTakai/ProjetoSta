@@ -5,9 +5,9 @@ import { CommonModule } from '@angular/common';
 import { GroupsRoutingModule } from './groups-routing.module';
 
 //Components
-import { AddGroupComponent } from './components/add-group/add-group.component';
+import { CreateGroupComponent } from './components/create-group/create-group.component';
 import { EditGroupComponent } from './components/edit-group/edit-group.component';
-import { ShowGroupsComponent } from './components/show-groups/show-groups.component';
+import { ListGroupsComponent } from './components/list-groups/list-groups.component';
 import { FormViewComponent } from './components/form-view/form-view.component';
 
 @NgModule({
@@ -15,9 +15,9 @@ import { FormViewComponent } from './components/form-view/form-view.component';
     CommonModule,
     GroupsRoutingModule
   ],
-  declarations: [AddGroupComponent,
+  declarations: [CreateGroupComponent,
                 EditGroupComponent,
-                ShowGroupsComponent,
+                ListGroupsComponent,
                 FormViewComponent]
 })
 export class GroupsModule {

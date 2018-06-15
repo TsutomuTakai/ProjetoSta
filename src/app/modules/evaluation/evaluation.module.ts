@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ShowActualComponent } from './components/show-actual/show-actual.component';
-import { ShowAnswerFormComponent } from './components/show-answer-form/show-answer-form.component';
+import { ActualEvaluationComponent } from './components/actual-evaluation/actual-evaluation.component';
+import { AnswerFormComponent } from './components/answer-form/answer-form.component';
 import { EvaluationRoutingModule } from '@app/modules/evaluation';
 
 @NgModule({
@@ -9,7 +9,7 @@ import { EvaluationRoutingModule } from '@app/modules/evaluation';
     CommonModule,
     EvaluationRoutingModule
   ],
-  declarations: [ShowActualComponent,
-                ShowAnswerFormComponent]
+  declarations: [ActualEvaluationComponent,
+                AnswerFormComponent]
 })
 export class EvaluationModule { }

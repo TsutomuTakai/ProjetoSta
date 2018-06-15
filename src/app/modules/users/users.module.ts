@@ -6,8 +6,8 @@ import { UsersRoutingModule } from './users-routing.module';
 
 //Components
 import { EditUsersComponent } from './components/edit-users/edit-users.component';
-import { AddUsersComponent } from './components/add-users/add-users.component';
-import { ShowUsersComponent } from './components/show-users/show-users.component';
+import { CreateUsersComponent } from './components/create-users/create-users.component';
+import { ListUsersComponent } from './components/list-users/list-users.component';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { ShowUsersComponent } from './components/show-users/show-users.component
     UsersRoutingModule
   ],
   declarations: [EditUsersComponent,
-                  AddUsersComponent,
-                  ShowUsersComponent]
+                  CreateUsersComponent,
+                  ListUsersComponent]
 })
 export class UsersModule { }

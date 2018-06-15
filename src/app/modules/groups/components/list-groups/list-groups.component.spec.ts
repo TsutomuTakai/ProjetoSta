@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShowActualComponent } from './show-actual.component';
+import { ListGroupsComponent } from './list-groups.component';
 
-describe('ShowActualComponent', () => {
-  let component: ShowActualComponent;
-  let fixture: ComponentFixture<ShowActualComponent>;
+describe('ListGroupsComponent', () => {
+  let component: ListGroupsComponent;
+  let fixture: ComponentFixture<ListGroupsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShowActualComponent ]
+      declarations: [ ListGroupsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShowActualComponent);
+    fixture = TestBed.createComponent(ListGroupsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
